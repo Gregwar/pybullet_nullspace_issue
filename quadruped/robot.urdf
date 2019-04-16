@@ -1,0 +1,1619 @@
+<robot name="onshape">
+<link name="body_1">
+<inertial>
+<origin xyz="0 0 0" rpy="0 0 0" />
+<mass value="0" />
+<inertia ixx="0" ixy="0" ixz="0" iyy="0" iyz="0" izz="0" />
+</inertial>
+</link>
+<link name="body_1_0">
+<visual>
+<geometry>
+<mesh filename="package://body.stl"/>
+</geometry>
+<material name="body_1_0_material">
+<color rgba="0.972549 0.529412 0.00392157 1.0"/>
+</material>
+</visual>
+<collision>
+<origin xyz="0 0 0.0011" rpy="0 -0 0" />
+<geometry>
+<box size="0.03 0.03 0.002" />
+</geometry>
+<material name="body_1_0_material">
+<color rgba="0.972549 0.529412 0.00392157 1.0"/>
+</material>
+</collision>
+<inertial>
+<origin xyz="-1.71078e-19 5.13234e-19 0.00115" rpy="0 0 0"/>
+<mass value="0.00508653"/>
+<inertia ixx="8.92046e-07" ixy="0"  ixz="0" iyy="8.92046e-07" iyz="0" izz="1.77961e-06" />
+</inertial>
+</link>
+<joint name="body_1_body_1_0_fixing" type="fixed">
+<origin xyz="0 0 0" rpy="0 -0 0" />
+<parent link="body_1" />
+<child link="body_1_0" />
+<axis xyz="0 0 0"/>
+</joint>
+
+<link name="body_1_1">
+<visual>
+<geometry>
+<mesh filename="package://horn.stl"/>
+</geometry>
+<material name="body_1_1_material">
+<color rgba="0.917647 0.917647 0.917647 1.0"/>
+</material>
+</visual>
+<inertial>
+<origin xyz="-2.29324e-19 -1.05216e-18 -0.0134483" rpy="0 0 0"/>
+<mass value="0.000575062"/>
+<inertia ixx="1.30173e-08" ixy="0"  ixz="0" iyy="1.30173e-08" iyz="0" izz="2.51949e-08" />
+</inertial>
+</link>
+<joint name="body_1_body_1_1_fixing" type="fixed">
+<origin xyz="3.46945e-18 -0.0485 0.0143" rpy="0 -0 1.49355" />
+<parent link="body_1" />
+<child link="body_1_1" />
+<axis xyz="0 0 0"/>
+</joint>
+
+<link name="body_1_2">
+<visual>
+<geometry>
+<mesh filename="package://motor.stl"/>
+</geometry>
+<material name="body_1_2_material">
+<color rgba="0.470588 0.470588 0.470588 1.0"/>
+</material>
+</visual>
+<collision>
+<origin xyz="0 -0.008 0" rpy="0 -0 0" />
+<geometry>
+<box size="0.02 0.03 0.022" />
+</geometry>
+<material name="body_1_2_material">
+<color rgba="0.470588 0.470588 0.470588 1.0"/>
+</material>
+</collision>
+<inertial>
+<origin xyz="2.21444e-09 -0.00683721 0.000497669" rpy="0 0 0"/>
+<mass value="0.0171001"/>
+<inertia ixx="2.29537e-06" ixy="-5.64962e-13"  ixz="-2.154e-13" iyy="1.52616e-06" iyz="-6.36265e-08" izz="2.01963e-06" />
+</inertial>
+</link>
+<joint name="body_1_body_1_2_fixing" type="fixed">
+<origin xyz="0.0485 4.33681e-18 0.0143" rpy="0 -0 -1.5708" />
+<parent link="body_1" />
+<child link="body_1_2" />
+<axis xyz="0 0 0"/>
+</joint>
+
+<link name="body_1_3">
+<visual>
+<geometry>
+<mesh filename="package://motor.stl"/>
+</geometry>
+<material name="body_1_3_material">
+<color rgba="0.470588 0.470588 0.470588 1.0"/>
+</material>
+</visual>
+<collision>
+<origin xyz="0 -0.008 0" rpy="0 -0 0" />
+<geometry>
+<box size="0.02 0.03 0.022" />
+</geometry>
+<material name="body_1_3_material">
+<color rgba="0.470588 0.470588 0.470588 1.0"/>
+</material>
+</collision>
+<inertial>
+<origin xyz="2.21444e-09 -0.00683721 0.000497669" rpy="0 0 0"/>
+<mass value="0.0171001"/>
+<inertia ixx="2.29537e-06" ixy="-5.64962e-13"  ixz="-2.154e-13" iyy="1.52616e-06" iyz="-6.36265e-08" izz="2.01963e-06" />
+</inertial>
+</link>
+<joint name="body_1_body_1_3_fixing" type="fixed">
+<origin xyz="-0.0485 2.56739e-16 0.0143" rpy="6.87729e-22 3.74562e-16 1.5708" />
+<parent link="body_1" />
+<child link="body_1_3" />
+<axis xyz="0 0 0"/>
+</joint>
+
+<link name="body_1_4">
+<visual>
+<geometry>
+<mesh filename="package://horn.stl"/>
+</geometry>
+<material name="body_1_4_material">
+<color rgba="0.917647 0.917647 0.917647 1.0"/>
+</material>
+</visual>
+<inertial>
+<origin xyz="-2.29324e-19 -1.05216e-18 -0.0134483" rpy="0 0 0"/>
+<mass value="0.000575062"/>
+<inertia ixx="1.30173e-08" ixy="0"  ixz="0" iyy="1.30173e-08" iyz="0" izz="2.51949e-08" />
+</inertial>
+</link>
+<joint name="body_1_body_1_4_fixing" type="fixed">
+<origin xyz="0.0485 -1.94242e-17 0.0143" rpy="0 -0 1.45228" />
+<parent link="body_1" />
+<child link="body_1_4" />
+<axis xyz="0 0 0"/>
+</joint>
+
+<link name="body_1_5">
+<visual>
+<geometry>
+<mesh filename="package://horn.stl"/>
+</geometry>
+<material name="body_1_5_material">
+<color rgba="0.917647 0.917647 0.917647 1.0"/>
+</material>
+</visual>
+<inertial>
+<origin xyz="-2.29324e-19 -1.05216e-18 -0.0134483" rpy="0 0 0"/>
+<mass value="0.000575062"/>
+<inertia ixx="1.30173e-08" ixy="0"  ixz="0" iyy="1.30173e-08" iyz="0" izz="2.51949e-08" />
+</inertial>
+</link>
+<joint name="body_1_body_1_5_fixing" type="fixed">
+<origin xyz="-0.0485 6.93889e-17 0.0143" rpy="0 -0 1.49355" />
+<parent link="body_1" />
+<child link="body_1_5" />
+<axis xyz="0 0 0"/>
+</joint>
+
+<link name="body_1_6">
+<visual>
+<geometry>
+<mesh filename="package://motor.stl"/>
+</geometry>
+<material name="body_1_6_material">
+<color rgba="0.470588 0.470588 0.470588 1.0"/>
+</material>
+</visual>
+<collision>
+<origin xyz="0 -0.008 0" rpy="0 -0 0" />
+<geometry>
+<box size="0.02 0.03 0.022" />
+</geometry>
+<material name="body_1_6_material">
+<color rgba="0.470588 0.470588 0.470588 1.0"/>
+</material>
+</collision>
+<inertial>
+<origin xyz="2.21444e-09 -0.00683721 0.000497669" rpy="0 0 0"/>
+<mass value="0.0171001"/>
+<inertia ixx="2.29537e-06" ixy="-5.64962e-13"  ixz="-2.154e-13" iyy="1.52616e-06" iyz="-6.36265e-08" izz="2.01963e-06" />
+</inertial>
+</link>
+<joint name="body_1_body_1_6_fixing" type="fixed">
+<origin xyz="-9.54098e-18 0.0485 0.0143" rpy="0 -0 8.32667e-16" />
+<parent link="body_1" />
+<child link="body_1_6" />
+<axis xyz="0 0 0"/>
+</joint>
+
+<link name="body_1_7">
+<visual>
+<geometry>
+<mesh filename="package://body.stl"/>
+</geometry>
+<material name="body_1_7_material">
+<color rgba="0.972549 0.529412 0.00392157 1.0"/>
+</material>
+</visual>
+<collision>
+<origin xyz="0 0 0.0011" rpy="0 -0 0" />
+<geometry>
+<box size="0.03 0.03 0.002" />
+</geometry>
+<material name="body_1_7_material">
+<color rgba="0.972549 0.529412 0.00392157 1.0"/>
+</material>
+</collision>
+<inertial>
+<origin xyz="-1.71078e-19 5.13234e-19 0.00115" rpy="0 0 0"/>
+<mass value="0.00508653"/>
+<inertia ixx="8.92046e-07" ixy="0"  ixz="0" iyy="8.92046e-07" iyz="0" izz="1.77961e-06" />
+</inertial>
+</link>
+<joint name="body_1_body_1_7_fixing" type="fixed">
+<origin xyz="0 3.46945e-18 0.0286" rpy="3.14159 -0 0" />
+<parent link="body_1" />
+<child link="body_1_7" />
+<axis xyz="0 0 0"/>
+</joint>
+
+<link name="body_1_8">
+<visual>
+<geometry>
+<mesh filename="package://motor.stl"/>
+</geometry>
+<material name="body_1_8_material">
+<color rgba="0.470588 0.470588 0.470588 1.0"/>
+</material>
+</visual>
+<collision>
+<origin xyz="0 -0.008 0" rpy="0 -0 0" />
+<geometry>
+<box size="0.02 0.03 0.022" />
+</geometry>
+<material name="body_1_8_material">
+<color rgba="0.470588 0.470588 0.470588 1.0"/>
+</material>
+</collision>
+<inertial>
+<origin xyz="2.21444e-09 -0.00683721 0.000497669" rpy="0 0 0"/>
+<mass value="0.0171001"/>
+<inertia ixx="2.29537e-06" ixy="-5.64962e-13"  ixz="-2.154e-13" iyy="1.52616e-06" iyz="-6.36265e-08" izz="2.01963e-06" />
+</inertial>
+</link>
+<joint name="body_1_body_1_8_fixing" type="fixed">
+<origin xyz="1.73472e-18 -0.0485 0.0143" rpy="0 -0 -3.14159" />
+<parent link="body_1" />
+<child link="body_1_8" />
+<axis xyz="0 0 0"/>
+</joint>
+
+<link name="body_1_9">
+<visual>
+<geometry>
+<mesh filename="package://horn.stl"/>
+</geometry>
+<material name="body_1_9_material">
+<color rgba="0.917647 0.917647 0.917647 1.0"/>
+</material>
+</visual>
+<inertial>
+<origin xyz="-2.29324e-19 -1.05216e-18 -0.0134483" rpy="0 0 0"/>
+<mass value="0.000575062"/>
+<inertia ixx="1.30173e-08" ixy="0"  ixz="0" iyy="1.30173e-08" iyz="0" izz="2.51949e-08" />
+</inertial>
+</link>
+<joint name="body_1_body_1_9_fixing" type="fixed">
+<origin xyz="-9.66308e-18 0.0485 0.0143" rpy="0 -0 1.49355" />
+<parent link="body_1" />
+<child link="body_1_9" />
+<axis xyz="0 0 0"/>
+</joint>
+
+<link name="trunk">
+<inertial>
+<origin xyz="0 0 0" rpy="0 0 0" />
+<mass value="1e-9" />
+<inertia ixx="0" ixy="0" ixz="0" iyy="0" iyz="0" izz="0" />
+</inertial>
+</link>
+<joint name="trunk_frame" type="fixed">
+<origin xyz="-1.46437e-18 8.91964e-20 0.0148" rpy="0 -0 0" />
+<parent link="body_1" />
+<child link="trunk" />
+<axis xyz="0 0 0"/>
+</joint>
+
+<link name="doubleu_1">
+<inertial>
+<origin xyz="0 0 0" rpy="0 0 0" />
+<mass value="1e-9" />
+<inertia ixx="0" ixy="0" ixz="0" iyy="0" iyz="0" izz="0" />
+</inertial>
+</link>
+<link name="doubleu_1_0">
+<visual>
+<geometry>
+<mesh filename="package://u.stl"/>
+</geometry>
+<material name="doubleu_1_0_material">
+<color rgba="0.972549 0.529412 0.00392157 1.0"/>
+</material>
+</visual>
+<collision>
+<origin xyz="0 0 0.0011" rpy="0 -0 0" />
+<geometry>
+<box size="0.02 0.03 0.002" />
+</geometry>
+<material name="doubleu_1_0_material">
+<color rgba="0.972549 0.529412 0.00392157 1.0"/>
+</material>
+</collision>
+<inertial>
+<origin xyz="3.15014e-18 5.44724e-18 -0.00844242" rpy="0 0 0"/>
+<mass value="0.00415349"/>
+<inertia ixx="1.25185e-06" ixy="0"  ixz="0" iyy="5.73141e-07" iyz="0" izz="9.62751e-07" />
+</inertial>
+</link>
+<joint name="doubleu_1_doubleu_1_0_fixing" type="fixed">
+<origin xyz="4.93038e-32 -0.01615 0.018" rpy="0 1.07805e-47 0" />
+<parent link="doubleu_1" />
+<child link="doubleu_1_0" />
+<axis xyz="0 0 0"/>
+</joint>
+
+<link name="doubleu_1_1">
+<visual>
+<geometry>
+<mesh filename="package://u.stl"/>
+</geometry>
+<material name="doubleu_1_1_material">
+<color rgba="0.972549 0.529412 0.00392157 1.0"/>
+</material>
+</visual>
+<collision>
+<origin xyz="0 0 0.0011" rpy="0 -0 0" />
+<geometry>
+<box size="0.02 0.03 0.002" />
+</geometry>
+<material name="doubleu_1_1_material">
+<color rgba="0.972549 0.529412 0.00392157 1.0"/>
+</material>
+</collision>
+<inertial>
+<origin xyz="3.15014e-18 5.44724e-18 -0.00844242" rpy="0 0 0"/>
+<mass value="0.00415349"/>
+<inertia ixx="1.25185e-06" ixy="0"  ixz="0" iyy="5.73141e-07" iyz="0" izz="9.62751e-07" />
+</inertial>
+</link>
+<joint name="doubleu_1_doubleu_1_1_fixing" type="fixed">
+<origin xyz="2.50522e-17 -0.01615 0.0226" rpy="3.14159 4.93038e-32 1.5708" />
+<parent link="doubleu_1" />
+<child link="doubleu_1_1" />
+<axis xyz="0 0 0"/>
+</joint>
+
+<link name="platesblock_1">
+<inertial>
+<origin xyz="0 0 0" rpy="0 0 0" />
+<mass value="1e-9" />
+<inertia ixx="0" ixy="0" ixz="0" iyy="0" iyz="0" izz="0" />
+</inertial>
+</link>
+<link name="platesblock_1_0">
+<visual>
+<geometry>
+<mesh filename="package://horn.stl"/>
+</geometry>
+<material name="platesblock_1_0_material">
+<color rgba="0.917647 0.917647 0.917647 1.0"/>
+</material>
+</visual>
+<inertial>
+<origin xyz="-2.29324e-19 -1.05216e-18 -0.0134483" rpy="0 0 0"/>
+<mass value="0.000575062"/>
+<inertia ixx="1.30173e-08" ixy="0"  ixz="0" iyy="1.30173e-08" iyz="0" izz="2.51949e-08" />
+</inertial>
+</link>
+<joint name="platesblock_1_platesblock_1_0_fixing" type="fixed">
+<origin xyz="1.37911e-15 -0.063 0.015" rpy="1.30136e-16 1.57211e-15 -2.55772" />
+<parent link="platesblock_1" />
+<child link="platesblock_1_0" />
+<axis xyz="0 0 0"/>
+</joint>
+
+<link name="platesblock_1_1">
+<visual>
+<geometry>
+<mesh filename="package://horn.stl"/>
+</geometry>
+<material name="platesblock_1_1_material">
+<color rgba="0.917647 0.917647 0.917647 1.0"/>
+</material>
+</visual>
+<inertial>
+<origin xyz="-2.29324e-19 -1.05216e-18 -0.0134483" rpy="0 0 0"/>
+<mass value="0.000575062"/>
+<inertia ixx="1.30173e-08" ixy="0"  ixz="0" iyy="1.30173e-08" iyz="0" izz="2.51949e-08" />
+</inertial>
+</link>
+<joint name="platesblock_1_platesblock_1_1_fixing" type="fixed">
+<origin xyz="0 0 0.015" rpy="-1.08551e-32 -1.36939e-31 -1.25513e-32" />
+<parent link="platesblock_1" />
+<child link="platesblock_1_1" />
+<axis xyz="0 0 0"/>
+</joint>
+
+<link name="platesblock_1_2">
+<visual>
+<geometry>
+<mesh filename="package://motor.stl"/>
+</geometry>
+<material name="platesblock_1_2_material">
+<color rgba="0.470588 0.470588 0.470588 1.0"/>
+</material>
+</visual>
+<collision>
+<origin xyz="0 -0.008 0" rpy="0 -0 0" />
+<geometry>
+<box size="0.02 0.03 0.022" />
+</geometry>
+<material name="platesblock_1_2_material">
+<color rgba="0.470588 0.470588 0.470588 1.0"/>
+</material>
+</collision>
+<inertial>
+<origin xyz="2.21444e-09 -0.00683721 0.000497669" rpy="0 0 0"/>
+<mass value="0.0171001"/>
+<inertia ixx="2.29537e-06" ixy="-5.64962e-13"  ixz="-2.154e-13" iyy="1.52616e-06" iyz="-6.36265e-08" izz="2.01963e-06" />
+</inertial>
+</link>
+<joint name="platesblock_1_platesblock_1_2_fixing" type="fixed">
+<origin xyz="1.42074e-15 -0.063 0.015" rpy="-1.33671e-15 1.74617e-15 -3.14159" />
+<parent link="platesblock_1" />
+<child link="platesblock_1_2" />
+<axis xyz="0 0 0"/>
+</joint>
+
+<link name="platesblock_1_3">
+<visual>
+<geometry>
+<mesh filename="package://motor.stl"/>
+</geometry>
+<material name="platesblock_1_3_material">
+<color rgba="0.470588 0.470588 0.470588 1.0"/>
+</material>
+</visual>
+<collision>
+<origin xyz="0 -0.008 0" rpy="0 -0 0" />
+<geometry>
+<box size="0.02 0.03 0.022" />
+</geometry>
+<material name="platesblock_1_3_material">
+<color rgba="0.470588 0.470588 0.470588 1.0"/>
+</material>
+</collision>
+<inertial>
+<origin xyz="2.21444e-09 -0.00683721 0.000497669" rpy="0 0 0"/>
+<mass value="0.0171001"/>
+<inertia ixx="2.29537e-06" ixy="-5.64962e-13"  ixz="-2.154e-13" iyy="1.52616e-06" iyz="-6.36265e-08" izz="2.01963e-06" />
+</inertial>
+</link>
+<joint name="platesblock_1_platesblock_1_3_fixing" type="fixed">
+<origin xyz="-2.77556e-17 1.38778e-17 0.015" rpy="2.3574e-16 -1.52412e-15 -1.45338e-16" />
+<parent link="platesblock_1" />
+<child link="platesblock_1_3" />
+<axis xyz="0 0 0"/>
+</joint>
+
+<link name="platesblock_1_4">
+<visual>
+<geometry>
+<mesh filename="package://plate.stl"/>
+</geometry>
+<material name="platesblock_1_4_material">
+<color rgba="0.972549 0.529412 0.00392157 1.0"/>
+</material>
+</visual>
+<collision>
+<origin xyz="0.0375 0 0.0012" rpy="0 -0 0" />
+<geometry>
+<box size="0.073 0.015 0.002" />
+</geometry>
+<material name="platesblock_1_4_material">
+<color rgba="0.972549 0.529412 0.00392157 1.0"/>
+</material>
+</collision>
+<inertial>
+<origin xyz="0.0375 -1.256e-18 0.00115" rpy="0 0 0"/>
+<mass value="0.00321261"/>
+<inertia ixx="1.09131e-07" ixy="0"  ixz="0" iyy="1.41928e-06" iyz="0" izz="1.52558e-06" />
+</inertial>
+</link>
+<joint name="platesblock_1_platesblock_1_4_fixing" type="fixed">
+<origin xyz="0.0143 0.006 0.015" rpy="1.5708 1.42923e-15 -1.5708" />
+<parent link="platesblock_1" />
+<child link="platesblock_1_4" />
+<axis xyz="0 0 0"/>
+</joint>
+
+<link name="platesblock_1_5">
+<visual>
+<geometry>
+<mesh filename="package://plate.stl"/>
+</geometry>
+<material name="platesblock_1_5_material">
+<color rgba="0.972549 0.529412 0.00392157 1.0"/>
+</material>
+</visual>
+<collision>
+<origin xyz="0.0375 0 0.0012" rpy="0 -0 0" />
+<geometry>
+<box size="0.073 0.015 0.002" />
+</geometry>
+<material name="platesblock_1_5_material">
+<color rgba="0.972549 0.529412 0.00392157 1.0"/>
+</material>
+</collision>
+<inertial>
+<origin xyz="0.0375 -1.256e-18 0.00115" rpy="0 0 0"/>
+<mass value="0.00321261"/>
+<inertia ixx="1.09131e-07" ixy="0"  ixz="0" iyy="1.41928e-06" iyz="0" izz="1.52558e-06" />
+</inertial>
+</link>
+<joint name="platesblock_1_platesblock_1_5_fixing" type="fixed">
+<origin xyz="-0.012 0.006 0.015" rpy="1.5708 3.74518e-16 -1.5708" />
+<parent link="platesblock_1" />
+<child link="platesblock_1_5" />
+<axis xyz="0 0 0"/>
+</joint>
+
+<link name="leg_1">
+<inertial>
+<origin xyz="0 0 0" rpy="0 0 0" />
+<mass value="1e-9" />
+<inertia ixx="0" ixy="0" ixz="0" iyy="0" iyz="0" izz="0" />
+</inertial>
+</link>
+<link name="leg_1_0">
+<visual>
+<geometry>
+<mesh filename="package://leg.stl"/>
+</geometry>
+<material name="leg_1_0_material">
+<color rgba="0.972549 0.529412 0.00392157 1.0"/>
+</material>
+</visual>
+<collision>
+<origin xyz="0 -0.016 -0.035" rpy="0 -0 0" />
+<geometry>
+<box size="0.02 0.002 0.09" />
+</geometry>
+<material name="leg_1_0_material">
+<color rgba="0.972549 0.529412 0.00392157 1.0"/>
+</material>
+</collision>
+<collision>
+<origin xyz="0 0.016 -0.035" rpy="0 -0 0" />
+<geometry>
+<box size="0.02 0.002 0.09" />
+</geometry>
+<material name="leg_1_0_material">
+<color rgba="0.972549 0.529412 0.00392157 1.0"/>
+</material>
+</collision>
+<collision>
+<origin xyz="0 0 -0.09" rpy="0 -0 0" />
+<geometry>
+<sphere radius="0.015" />
+</geometry>
+<material name="leg_1_0_material">
+<color rgba="0.972549 0.529412 0.00392157 1.0"/>
+</material>
+</collision>
+<inertial>
+<origin xyz="-1.81936e-17 -1.53804e-17 -0.0533786" rpy="0 0 0"/>
+<mass value="0.0154162"/>
+<inertia ixx="2.13816e-05" ixy="0"  ixz="0" iyy="1.88204e-05" iyz="0" izz="3.58407e-06" />
+</inertial>
+</link>
+<joint name="leg_1_leg_1_0_fixing" type="fixed">
+<origin xyz="1.73472e-18 0.015 0" rpy="1.6482e-33 -1.97058e-46 4.39656e-35" />
+<parent link="leg_1" />
+<child link="leg_1_0" />
+<axis xyz="0 0 0"/>
+</joint>
+
+<joint name="leg1_c" type="revolute">
+<origin xyz="1.36696e-15 -0.063 -1.56125e-17" rpy="1.5708 7.3803e-16 3.14159" />
+<parent link="platesblock_1" />
+<child link="leg_1" />
+<axis xyz="0 1 0"/>
+<limit effort="1" velocity="20" />
+<joint_properties friction="0.0"/>
+</joint>
+
+<joint name="leg1_b" type="revolute">
+<origin xyz="0.015 -0.01615 0.0406" rpy="-1.5708 4.21149e-16 1.5708" />
+<parent link="doubleu_1" />
+<child link="platesblock_1" />
+<axis xyz="0 0 1"/>
+<limit effort="1" velocity="20" />
+<joint_properties friction="0.0"/>
+</joint>
+
+<joint name="leg1_a" type="revolute">
+<origin xyz="-0.0485 2.51367e-16 -0.0007" rpy="-1.5708 3.03402e-16 1.5708" />
+<parent link="body_1" />
+<child link="doubleu_1" />
+<axis xyz="0 1 0"/>
+<limit effort="1" velocity="20" />
+<joint_properties friction="0.0"/>
+</joint>
+
+<link name="doubleu_2">
+<inertial>
+<origin xyz="0 0 0" rpy="0 0 0" />
+<mass value="1e-9" />
+<inertia ixx="0" ixy="0" ixz="0" iyy="0" iyz="0" izz="0" />
+</inertial>
+</link>
+<link name="doubleu_2_0">
+<visual>
+<geometry>
+<mesh filename="package://u.stl"/>
+</geometry>
+<material name="doubleu_2_0_material">
+<color rgba="0.972549 0.529412 0.00392157 1.0"/>
+</material>
+</visual>
+<collision>
+<origin xyz="0 0 0.0011" rpy="0 -0 0" />
+<geometry>
+<box size="0.02 0.03 0.002" />
+</geometry>
+<material name="doubleu_2_0_material">
+<color rgba="0.972549 0.529412 0.00392157 1.0"/>
+</material>
+</collision>
+<inertial>
+<origin xyz="3.15014e-18 5.44724e-18 -0.00844242" rpy="0 0 0"/>
+<mass value="0.00415349"/>
+<inertia ixx="1.25185e-06" ixy="0"  ixz="0" iyy="5.73141e-07" iyz="0" izz="9.62751e-07" />
+</inertial>
+</link>
+<joint name="doubleu_2_doubleu_2_0_fixing" type="fixed">
+<origin xyz="0 -0.015 0.018" rpy="1.11412e-41 3.08149e-33 -2.74824e-41" />
+<parent link="doubleu_2" />
+<child link="doubleu_2_0" />
+<axis xyz="0 0 0"/>
+</joint>
+
+<link name="doubleu_2_1">
+<visual>
+<geometry>
+<mesh filename="package://u.stl"/>
+</geometry>
+<material name="doubleu_2_1_material">
+<color rgba="0.972549 0.529412 0.00392157 1.0"/>
+</material>
+</visual>
+<collision>
+<origin xyz="0 0 0.0011" rpy="0 -0 0" />
+<geometry>
+<box size="0.02 0.03 0.002" />
+</geometry>
+<material name="doubleu_2_1_material">
+<color rgba="0.972549 0.529412 0.00392157 1.0"/>
+</material>
+</collision>
+<inertial>
+<origin xyz="3.15014e-18 5.44724e-18 -0.00844242" rpy="0 0 0"/>
+<mass value="0.00415349"/>
+<inertia ixx="1.25185e-06" ixy="0"  ixz="0" iyy="5.73141e-07" iyz="0" izz="9.62751e-07" />
+</inertial>
+</link>
+<joint name="doubleu_2_doubleu_2_1_fixing" type="fixed">
+<origin xyz="6.28584e-17 -0.015 0.0226" rpy="3.14159 -1.95509e-20 1.5708" />
+<parent link="doubleu_2" />
+<child link="doubleu_2_1" />
+<axis xyz="0 0 0"/>
+</joint>
+
+<link name="platesblock_2">
+<inertial>
+<origin xyz="0 0 0" rpy="0 0 0" />
+<mass value="1e-9" />
+<inertia ixx="0" ixy="0" ixz="0" iyy="0" iyz="0" izz="0" />
+</inertial>
+</link>
+<link name="platesblock_2_0">
+<visual>
+<geometry>
+<mesh filename="package://plate.stl"/>
+</geometry>
+<material name="platesblock_2_0_material">
+<color rgba="0.972549 0.529412 0.00392157 1.0"/>
+</material>
+</visual>
+<collision>
+<origin xyz="0.0375 0 0.0012" rpy="0 -0 0" />
+<geometry>
+<box size="0.073 0.015 0.002" />
+</geometry>
+<material name="platesblock_2_0_material">
+<color rgba="0.972549 0.529412 0.00392157 1.0"/>
+</material>
+</collision>
+<inertial>
+<origin xyz="0.0375 -1.256e-18 0.00115" rpy="0 0 0"/>
+<mass value="0.00321261"/>
+<inertia ixx="1.09131e-07" ixy="0"  ixz="0" iyy="1.41928e-06" iyz="0" izz="1.52558e-06" />
+</inertial>
+</link>
+<joint name="platesblock_2_platesblock_2_0_fixing" type="fixed">
+<origin xyz="0.006 0.012 0.015" rpy="1.5708 7.49401e-16 3.14159" />
+<parent link="platesblock_2" />
+<child link="platesblock_2_0" />
+<axis xyz="0 0 0"/>
+</joint>
+
+<link name="platesblock_2_1">
+<visual>
+<geometry>
+<mesh filename="package://plate.stl"/>
+</geometry>
+<material name="platesblock_2_1_material">
+<color rgba="0.972549 0.529412 0.00392157 1.0"/>
+</material>
+</visual>
+<collision>
+<origin xyz="0.0375 0 0.0012" rpy="0 -0 0" />
+<geometry>
+<box size="0.073 0.015 0.002" />
+</geometry>
+<material name="platesblock_2_1_material">
+<color rgba="0.972549 0.529412 0.00392157 1.0"/>
+</material>
+</collision>
+<inertial>
+<origin xyz="0.0375 -1.256e-18 0.00115" rpy="0 0 0"/>
+<mass value="0.00321261"/>
+<inertia ixx="1.09131e-07" ixy="0"  ixz="0" iyy="1.41928e-06" iyz="0" izz="1.52558e-06" />
+</inertial>
+</link>
+<joint name="platesblock_2_platesblock_2_1_fixing" type="fixed">
+<origin xyz="0.006 -0.0143 0.015" rpy="1.5708 3.26128e-15 -3.14159" />
+<parent link="platesblock_2" />
+<child link="platesblock_2_1" />
+<axis xyz="0 0 0"/>
+</joint>
+
+<link name="platesblock_2_2">
+<visual>
+<geometry>
+<mesh filename="package://horn.stl"/>
+</geometry>
+<material name="platesblock_2_2_material">
+<color rgba="0.917647 0.917647 0.917647 1.0"/>
+</material>
+</visual>
+<inertial>
+<origin xyz="-2.29324e-19 -1.05216e-18 -0.0134483" rpy="0 0 0"/>
+<mass value="0.000575062"/>
+<inertia ixx="1.30173e-08" ixy="0"  ixz="0" iyy="1.30173e-08" iyz="0" izz="2.51949e-08" />
+</inertial>
+</link>
+<joint name="platesblock_2_platesblock_2_2_fixing" type="fixed">
+<origin xyz="-0.063 -1.53523e-15 0.015" rpy="-4.63279e-15 2.96691e-15 1.87535" />
+<parent link="platesblock_2" />
+<child link="platesblock_2_2" />
+<axis xyz="0 0 0"/>
+</joint>
+
+<link name="platesblock_2_3">
+<visual>
+<geometry>
+<mesh filename="package://horn.stl"/>
+</geometry>
+<material name="platesblock_2_3_material">
+<color rgba="0.917647 0.917647 0.917647 1.0"/>
+</material>
+</visual>
+<inertial>
+<origin xyz="-2.29324e-19 -1.05216e-18 -0.0134483" rpy="0 0 0"/>
+<mass value="0.000575062"/>
+<inertia ixx="1.30173e-08" ixy="0"  ixz="0" iyy="1.30173e-08" iyz="0" izz="2.51949e-08" />
+</inertial>
+</link>
+<joint name="platesblock_2_platesblock_2_3_fixing" type="fixed">
+<origin xyz="0 0 0.015" rpy="-6.81219e-32 -5.3841e-32 -4.72377e-33" />
+<parent link="platesblock_2" />
+<child link="platesblock_2_3" />
+<axis xyz="0 0 0"/>
+</joint>
+
+<link name="platesblock_2_4">
+<visual>
+<geometry>
+<mesh filename="package://motor.stl"/>
+</geometry>
+<material name="platesblock_2_4_material">
+<color rgba="0.470588 0.470588 0.470588 1.0"/>
+</material>
+</visual>
+<collision>
+<origin xyz="0 -0.008 0" rpy="0 -0 0" />
+<geometry>
+<box size="0.02 0.03 0.022" />
+</geometry>
+<material name="platesblock_2_4_material">
+<color rgba="0.470588 0.470588 0.470588 1.0"/>
+</material>
+</collision>
+<inertial>
+<origin xyz="2.21444e-09 -0.00683721 0.000497669" rpy="0 0 0"/>
+<mass value="0.0171001"/>
+<inertia ixx="2.29537e-06" ixy="-5.64962e-13"  ixz="-2.154e-13" iyy="1.52616e-06" iyz="-6.36265e-08" izz="2.01963e-06" />
+</inertial>
+</link>
+<joint name="platesblock_2_platesblock_2_4_fixing" type="fixed">
+<origin xyz="-0.063 -1.53523e-15 0.015" rpy="-5.34757e-15 1.42889e-15 1.5708" />
+<parent link="platesblock_2" />
+<child link="platesblock_2_4" />
+<axis xyz="0 0 0"/>
+</joint>
+
+<link name="platesblock_2_5">
+<visual>
+<geometry>
+<mesh filename="package://motor.stl"/>
+</geometry>
+<material name="platesblock_2_5_material">
+<color rgba="0.470588 0.470588 0.470588 1.0"/>
+</material>
+</visual>
+<collision>
+<origin xyz="0 -0.008 0" rpy="0 -0 0" />
+<geometry>
+<box size="0.02 0.03 0.022" />
+</geometry>
+<material name="platesblock_2_5_material">
+<color rgba="0.470588 0.470588 0.470588 1.0"/>
+</material>
+</collision>
+<inertial>
+<origin xyz="2.21444e-09 -0.00683721 0.000497669" rpy="0 0 0"/>
+<mass value="0.0171001"/>
+<inertia ixx="2.29537e-06" ixy="-5.64962e-13"  ixz="-2.154e-13" iyy="1.52616e-06" iyz="-6.36265e-08" izz="2.01963e-06" />
+</inertial>
+</link>
+<joint name="platesblock_2_platesblock_2_5_fixing" type="fixed">
+<origin xyz="0 0 0.015" rpy="3.26128e-15 -1.42889e-15 -1.5708" />
+<parent link="platesblock_2" />
+<child link="platesblock_2_5" />
+<axis xyz="0 0 0"/>
+</joint>
+
+<link name="leg_2">
+<inertial>
+<origin xyz="0 0 0" rpy="0 0 0" />
+<mass value="1e-9" />
+<inertia ixx="0" ixy="0" ixz="0" iyy="0" iyz="0" izz="0" />
+</inertial>
+</link>
+<link name="leg_2_0">
+<visual>
+<geometry>
+<mesh filename="package://leg.stl"/>
+</geometry>
+<material name="leg_2_0_material">
+<color rgba="0.972549 0.529412 0.00392157 1.0"/>
+</material>
+</visual>
+<collision>
+<origin xyz="0 -0.016 -0.035" rpy="0 -0 0" />
+<geometry>
+<box size="0.02 0.002 0.09" />
+</geometry>
+<material name="leg_2_0_material">
+<color rgba="0.972549 0.529412 0.00392157 1.0"/>
+</material>
+</collision>
+<collision>
+<origin xyz="0 0.016 -0.035" rpy="0 -0 0" />
+<geometry>
+<box size="0.02 0.002 0.09" />
+</geometry>
+<material name="leg_2_0_material">
+<color rgba="0.972549 0.529412 0.00392157 1.0"/>
+</material>
+</collision>
+<collision>
+<origin xyz="0 0 -0.09" rpy="0 -0 0" />
+<geometry>
+<sphere radius="0.015" />
+</geometry>
+<material name="leg_2_0_material">
+<color rgba="0.972549 0.529412 0.00392157 1.0"/>
+</material>
+</collision>
+<inertial>
+<origin xyz="-1.81936e-17 -1.53804e-17 -0.0533786" rpy="0 0 0"/>
+<mass value="0.0154162"/>
+<inertia ixx="2.13816e-05" ixy="0"  ixz="0" iyy="1.88204e-05" iyz="0" izz="3.58407e-06" />
+</inertial>
+</link>
+<joint name="leg_2_leg_2_0_fixing" type="fixed">
+<origin xyz="0 0.015 0" rpy="-5.43466e-32 -1.73656e-32 1.88918e-32" />
+<parent link="leg_2" />
+<child link="leg_2_0" />
+<axis xyz="0 0 0"/>
+</joint>
+
+<joint name="leg2_c" type="revolute">
+<origin xyz="-0.063 -1.53523e-15 4.28477e-16" rpy="1.5708 1.64389e-15 1.5708" />
+<parent link="platesblock_2" />
+<child link="leg_2" />
+<axis xyz="0 1 0"/>
+<limit effort="1" velocity="20" />
+<joint_properties friction="0.0"/>
+</joint>
+
+<joint name="leg2_b" type="revolute">
+<origin xyz="0.015 -0.015 0.0406" rpy="3.14159 1.5708 0" />
+<parent link="doubleu_2" />
+<child link="platesblock_2" />
+<axis xyz="0 0 1"/>
+<limit effort="1" velocity="20" />
+<joint_properties friction="0.0"/>
+</joint>
+
+<joint name="leg2_a" type="revolute">
+<origin xyz="-3.78517e-18 -0.0485 -0.0007" rpy="-1.5708 5.02497e-24 -3.14159" />
+<parent link="body_1" />
+<child link="doubleu_2" />
+<axis xyz="0 1 0"/>
+<limit effort="1" velocity="20" />
+<joint_properties friction="0.0"/>
+</joint>
+
+<link name="doubleu_3">
+<inertial>
+<origin xyz="0 0 0" rpy="0 0 0" />
+<mass value="1e-9" />
+<inertia ixx="0" ixy="0" ixz="0" iyy="0" iyz="0" izz="0" />
+</inertial>
+</link>
+<link name="doubleu_3_0">
+<visual>
+<geometry>
+<mesh filename="package://u.stl"/>
+</geometry>
+<material name="doubleu_3_0_material">
+<color rgba="0.972549 0.529412 0.00392157 1.0"/>
+</material>
+</visual>
+<collision>
+<origin xyz="0 0 0.0011" rpy="0 -0 0" />
+<geometry>
+<box size="0.02 0.03 0.002" />
+</geometry>
+<material name="doubleu_3_0_material">
+<color rgba="0.972549 0.529412 0.00392157 1.0"/>
+</material>
+</collision>
+<inertial>
+<origin xyz="3.15014e-18 5.44724e-18 -0.00844242" rpy="0 0 0"/>
+<mass value="0.00415349"/>
+<inertia ixx="1.25185e-06" ixy="0"  ixz="0" iyy="5.73141e-07" iyz="0" izz="9.62751e-07" />
+</inertial>
+</link>
+<joint name="doubleu_3_doubleu_3_0_fixing" type="fixed">
+<origin xyz="6.93889e-18 0.01615 0.0226" rpy="-3.14159 -1.03799e-25 1.5708" />
+<parent link="doubleu_3" />
+<child link="doubleu_3_0" />
+<axis xyz="0 0 0"/>
+</joint>
+
+<link name="doubleu_3_1">
+<visual>
+<geometry>
+<mesh filename="package://u.stl"/>
+</geometry>
+<material name="doubleu_3_1_material">
+<color rgba="0.972549 0.529412 0.00392157 1.0"/>
+</material>
+</visual>
+<collision>
+<origin xyz="0 0 0.0011" rpy="0 -0 0" />
+<geometry>
+<box size="0.02 0.03 0.002" />
+</geometry>
+<material name="doubleu_3_1_material">
+<color rgba="0.972549 0.529412 0.00392157 1.0"/>
+</material>
+</collision>
+<inertial>
+<origin xyz="3.15014e-18 5.44724e-18 -0.00844242" rpy="0 0 0"/>
+<mass value="0.00415349"/>
+<inertia ixx="1.25185e-06" ixy="0"  ixz="0" iyy="5.73141e-07" iyz="0" izz="9.62751e-07" />
+</inertial>
+</link>
+<joint name="doubleu_3_doubleu_3_1_fixing" type="fixed">
+<origin xyz="-7.70372e-34 0.01615 0.018" rpy="0 -0 0" />
+<parent link="doubleu_3" />
+<child link="doubleu_3_1" />
+<axis xyz="0 0 0"/>
+</joint>
+
+<link name="platesblock_3">
+<inertial>
+<origin xyz="0 0 0" rpy="0 0 0" />
+<mass value="1e-9" />
+<inertia ixx="0" ixy="0" ixz="0" iyy="0" iyz="0" izz="0" />
+</inertial>
+</link>
+<link name="platesblock_3_0">
+<visual>
+<geometry>
+<mesh filename="package://plate.stl"/>
+</geometry>
+<material name="platesblock_3_0_material">
+<color rgba="0.972549 0.529412 0.00392157 1.0"/>
+</material>
+</visual>
+<collision>
+<origin xyz="0.0375 0 0.0012" rpy="0 -0 0" />
+<geometry>
+<box size="0.073 0.015 0.002" />
+</geometry>
+<material name="platesblock_3_0_material">
+<color rgba="0.972549 0.529412 0.00392157 1.0"/>
+</material>
+</collision>
+<inertial>
+<origin xyz="0.0375 -1.256e-18 0.00115" rpy="0 0 0"/>
+<mass value="0.00321261"/>
+<inertia ixx="1.09131e-07" ixy="0"  ixz="0" iyy="1.41928e-06" iyz="0" izz="1.52558e-06" />
+</inertial>
+</link>
+<joint name="platesblock_3_platesblock_3_0_fixing" type="fixed">
+<origin xyz="0.006 0.012 0.015" rpy="1.5708 7.21645e-16 3.14159" />
+<parent link="platesblock_3" />
+<child link="platesblock_3_0" />
+<axis xyz="0 0 0"/>
+</joint>
+
+<link name="platesblock_3_1">
+<visual>
+<geometry>
+<mesh filename="package://motor.stl"/>
+</geometry>
+<material name="platesblock_3_1_material">
+<color rgba="0.470588 0.470588 0.470588 1.0"/>
+</material>
+</visual>
+<collision>
+<origin xyz="0 -0.008 0" rpy="0 -0 0" />
+<geometry>
+<box size="0.02 0.03 0.022" />
+</geometry>
+<material name="platesblock_3_1_material">
+<color rgba="0.470588 0.470588 0.470588 1.0"/>
+</material>
+</collision>
+<inertial>
+<origin xyz="2.21444e-09 -0.00683721 0.000497669" rpy="0 0 0"/>
+<mass value="0.0171001"/>
+<inertia ixx="2.29537e-06" ixy="-5.64962e-13"  ixz="-2.154e-13" iyy="1.52616e-06" iyz="-6.36265e-08" izz="2.01963e-06" />
+</inertial>
+</link>
+<joint name="platesblock_3_platesblock_3_1_fixing" type="fixed">
+<origin xyz="-0.063 -1.37217e-15 0.015" rpy="5.64363e-16 -1.10428e-17 1.5708" />
+<parent link="platesblock_3" />
+<child link="platesblock_3_1" />
+<axis xyz="0 0 0"/>
+</joint>
+
+<link name="platesblock_3_2">
+<visual>
+<geometry>
+<mesh filename="package://motor.stl"/>
+</geometry>
+<material name="platesblock_3_2_material">
+<color rgba="0.470588 0.470588 0.470588 1.0"/>
+</material>
+</visual>
+<collision>
+<origin xyz="0 -0.008 0" rpy="0 -0 0" />
+<geometry>
+<box size="0.02 0.03 0.022" />
+</geometry>
+<material name="platesblock_3_2_material">
+<color rgba="0.470588 0.470588 0.470588 1.0"/>
+</material>
+</collision>
+<inertial>
+<origin xyz="2.21444e-09 -0.00683721 0.000497669" rpy="0 0 0"/>
+<mass value="0.0171001"/>
+<inertia ixx="2.29537e-06" ixy="-5.64962e-13"  ixz="-2.154e-13" iyy="1.52616e-06" iyz="-6.36265e-08" izz="2.01963e-06" />
+</inertial>
+</link>
+<joint name="platesblock_3_platesblock_3_2_fixing" type="fixed">
+<origin xyz="0 -1.73472e-18 0.015" rpy="4.85723e-16 1.10428e-17 -1.5708" />
+<parent link="platesblock_3" />
+<child link="platesblock_3_2" />
+<axis xyz="0 0 0"/>
+</joint>
+
+<link name="platesblock_3_3">
+<visual>
+<geometry>
+<mesh filename="package://horn.stl"/>
+</geometry>
+<material name="platesblock_3_3_material">
+<color rgba="0.917647 0.917647 0.917647 1.0"/>
+</material>
+</visual>
+<inertial>
+<origin xyz="-2.29324e-19 -1.05216e-18 -0.0134483" rpy="0 0 0"/>
+<mass value="0.000575062"/>
+<inertia ixx="1.30173e-08" ixy="0"  ixz="0" iyy="1.30173e-08" iyz="0" izz="2.51949e-08" />
+</inertial>
+</link>
+<joint name="platesblock_3_platesblock_3_3_fixing" type="fixed">
+<origin xyz="-0.063 -1.37217e-15 0.015" rpy="4.04025e-17 -7.9239e-16 3.06435" />
+<parent link="platesblock_3" />
+<child link="platesblock_3_3" />
+<axis xyz="0 0 0"/>
+</joint>
+
+<link name="platesblock_3_4">
+<visual>
+<geometry>
+<mesh filename="package://plate.stl"/>
+</geometry>
+<material name="platesblock_3_4_material">
+<color rgba="0.972549 0.529412 0.00392157 1.0"/>
+</material>
+</visual>
+<collision>
+<origin xyz="0.0375 0 0.0012" rpy="0 -0 0" />
+<geometry>
+<box size="0.073 0.015 0.002" />
+</geometry>
+<material name="platesblock_3_4_material">
+<color rgba="0.972549 0.529412 0.00392157 1.0"/>
+</material>
+</collision>
+<inertial>
+<origin xyz="0.0375 -1.256e-18 0.00115" rpy="0 0 0"/>
+<mass value="0.00321261"/>
+<inertia ixx="1.09131e-07" ixy="0"  ixz="0" iyy="1.41928e-06" iyz="0" izz="1.52558e-06" />
+</inertial>
+</link>
+<joint name="platesblock_3_platesblock_3_4_fixing" type="fixed">
+<origin xyz="0.006 -0.0143 0.015" rpy="1.5708 1.19349e-15 -3.14159" />
+<parent link="platesblock_3" />
+<child link="platesblock_3_4" />
+<axis xyz="0 0 0"/>
+</joint>
+
+<link name="platesblock_3_5">
+<visual>
+<geometry>
+<mesh filename="package://horn.stl"/>
+</geometry>
+<material name="platesblock_3_5_material">
+<color rgba="0.917647 0.917647 0.917647 1.0"/>
+</material>
+</visual>
+<inertial>
+<origin xyz="-2.29324e-19 -1.05216e-18 -0.0134483" rpy="0 0 0"/>
+<mass value="0.000575062"/>
+<inertia ixx="1.30173e-08" ixy="0"  ixz="0" iyy="1.30173e-08" iyz="0" izz="2.51949e-08" />
+</inertial>
+</link>
+<joint name="platesblock_3_platesblock_3_5_fixing" type="fixed">
+<origin xyz="0 0 0.015" rpy="1.94922e-32 -4.5023e-32 4.39379e-34" />
+<parent link="platesblock_3" />
+<child link="platesblock_3_5" />
+<axis xyz="0 0 0"/>
+</joint>
+
+<link name="leg_3">
+<inertial>
+<origin xyz="0 0 0" rpy="0 0 0" />
+<mass value="1e-9" />
+<inertia ixx="0" ixy="0" ixz="0" iyy="0" iyz="0" izz="0" />
+</inertial>
+</link>
+<link name="leg_3_0">
+<visual>
+<geometry>
+<mesh filename="package://leg.stl"/>
+</geometry>
+<material name="leg_3_0_material">
+<color rgba="0.972549 0.529412 0.00392157 1.0"/>
+</material>
+</visual>
+<collision>
+<origin xyz="0 -0.016 -0.035" rpy="0 -0 0" />
+<geometry>
+<box size="0.02 0.002 0.09" />
+</geometry>
+<material name="leg_3_0_material">
+<color rgba="0.972549 0.529412 0.00392157 1.0"/>
+</material>
+</collision>
+<collision>
+<origin xyz="0 0.016 -0.035" rpy="0 -0 0" />
+<geometry>
+<box size="0.02 0.002 0.09" />
+</geometry>
+<material name="leg_3_0_material">
+<color rgba="0.972549 0.529412 0.00392157 1.0"/>
+</material>
+</collision>
+<collision>
+<origin xyz="0 0 -0.09" rpy="0 -0 0" />
+<geometry>
+<sphere radius="0.015" />
+</geometry>
+<material name="leg_3_0_material">
+<color rgba="0.972549 0.529412 0.00392157 1.0"/>
+</material>
+</collision>
+<inertial>
+<origin xyz="-1.81936e-17 -1.53804e-17 -0.0533786" rpy="0 0 0"/>
+<mass value="0.0154162"/>
+<inertia ixx="2.13816e-05" ixy="0"  ixz="0" iyy="1.88204e-05" iyz="0" izz="3.58407e-06" />
+</inertial>
+</link>
+<joint name="leg_3_leg_3_0_fixing" type="fixed">
+<origin xyz="-1.73472e-18 0.015 2.77556e-17" rpy="-1.8494e-32 -1.37504e-32 -4.29183e-32" />
+<parent link="leg_3" />
+<child link="leg_3_0" />
+<axis xyz="0 0 0"/>
+</joint>
+
+<link name="tip">
+<inertial>
+<origin xyz="0 0 0" rpy="0 0 0" />
+<mass value="1e-9" />
+<inertia ixx="0" ixy="0" ixz="0" iyy="0" iyz="0" izz="0" />
+</inertial>
+</link>
+<joint name="tip_frame" type="fixed">
+<origin xyz="0.0025 0.015 -0.1005" rpy="4.29183e-32 1.5708 0" />
+<parent link="leg_3" />
+<child link="tip" />
+<axis xyz="0 0 0"/>
+</joint>
+
+<joint name="leg3_c" type="revolute">
+<origin xyz="-0.063 -1.37217e-15 -2.77556e-17" rpy="1.5708 1.28111e-16 1.5708" />
+<parent link="platesblock_3" />
+<child link="leg_3" />
+<axis xyz="0 1 0"/>
+<limit effort="1" velocity="20" />
+<joint_properties friction="0.0"/>
+</joint>
+
+<joint name="leg3_b" type="revolute">
+<origin xyz="-0.015 0.01615 0.0406" rpy="-4.58992e-16 1.5708 0" />
+<parent link="doubleu_3" />
+<child link="platesblock_3" />
+<axis xyz="0 0 1"/>
+<limit effort="1" velocity="20" />
+<joint_properties friction="0.0"/>
+</joint>
+
+<joint name="leg3_a" type="revolute">
+<origin xyz="0.0485 5.20417e-18 -0.0007" rpy="1.5708 -4.93038e-32 1.5708" />
+<parent link="body_1" />
+<child link="doubleu_3" />
+<axis xyz="0 -1 0"/>
+<limit effort="1" velocity="20" />
+<joint_properties friction="0.0"/>
+</joint>
+
+<link name="doubleu_4">
+<inertial>
+<origin xyz="0 0 0" rpy="0 0 0" />
+<mass value="1e-9" />
+<inertia ixx="0" ixy="0" ixz="0" iyy="0" iyz="0" izz="0" />
+</inertial>
+</link>
+<link name="doubleu_4_0">
+<visual>
+<geometry>
+<mesh filename="package://u.stl"/>
+</geometry>
+<material name="doubleu_4_0_material">
+<color rgba="0.972549 0.529412 0.00392157 1.0"/>
+</material>
+</visual>
+<collision>
+<origin xyz="0 0 0.0011" rpy="0 -0 0" />
+<geometry>
+<box size="0.02 0.03 0.002" />
+</geometry>
+<material name="doubleu_4_0_material">
+<color rgba="0.972549 0.529412 0.00392157 1.0"/>
+</material>
+</collision>
+<inertial>
+<origin xyz="3.15014e-18 5.44724e-18 -0.00844242" rpy="0 0 0"/>
+<mass value="0.00415349"/>
+<inertia ixx="1.25185e-06" ixy="0"  ixz="0" iyy="5.73141e-07" iyz="0" izz="9.62751e-07" />
+</inertial>
+</link>
+<joint name="doubleu_4_doubleu_4_0_fixing" type="fixed">
+<origin xyz="6.16298e-33 0.01615 0.018" rpy="-7.63834e-38 1.2326e-32 1.47642e-35" />
+<parent link="doubleu_4" />
+<child link="doubleu_4_0" />
+<axis xyz="0 0 0"/>
+</joint>
+
+<link name="doubleu_4_1">
+<visual>
+<geometry>
+<mesh filename="package://u.stl"/>
+</geometry>
+<material name="doubleu_4_1_material">
+<color rgba="0.972549 0.529412 0.00392157 1.0"/>
+</material>
+</visual>
+<collision>
+<origin xyz="0 0 0.0011" rpy="0 -0 0" />
+<geometry>
+<box size="0.02 0.03 0.002" />
+</geometry>
+<material name="doubleu_4_1_material">
+<color rgba="0.972549 0.529412 0.00392157 1.0"/>
+</material>
+</collision>
+<inertial>
+<origin xyz="3.15014e-18 5.44724e-18 -0.00844242" rpy="0 0 0"/>
+<mass value="0.00415349"/>
+<inertia ixx="1.25185e-06" ixy="0"  ixz="0" iyy="5.73141e-07" iyz="0" izz="9.62751e-07" />
+</inertial>
+</link>
+<joint name="doubleu_4_doubleu_4_1_fixing" type="fixed">
+<origin xyz="4.08389e-17 0.01615 0.0226" rpy="-3.14159 5.55166e-17 1.5708" />
+<parent link="doubleu_4" />
+<child link="doubleu_4_1" />
+<axis xyz="0 0 0"/>
+</joint>
+
+<link name="platesblock_4">
+<inertial>
+<origin xyz="0 0 0" rpy="0 0 0" />
+<mass value="1e-9" />
+<inertia ixx="0" ixy="0" ixz="0" iyy="0" iyz="0" izz="0" />
+</inertial>
+</link>
+<link name="platesblock_4_0">
+<visual>
+<geometry>
+<mesh filename="package://plate.stl"/>
+</geometry>
+<material name="platesblock_4_0_material">
+<color rgba="0.972549 0.529412 0.00392157 1.0"/>
+</material>
+</visual>
+<collision>
+<origin xyz="0.0375 0 0.0012" rpy="0 -0 0" />
+<geometry>
+<box size="0.073 0.015 0.002" />
+</geometry>
+<material name="platesblock_4_0_material">
+<color rgba="0.972549 0.529412 0.00392157 1.0"/>
+</material>
+</collision>
+<inertial>
+<origin xyz="0.0375 -1.256e-18 0.00115" rpy="0 0 0"/>
+<mass value="0.00321261"/>
+<inertia ixx="1.09131e-07" ixy="0"  ixz="0" iyy="1.41928e-06" iyz="0" izz="1.52558e-06" />
+</inertial>
+</link>
+<joint name="platesblock_4_platesblock_4_0_fixing" type="fixed">
+<origin xyz="0.006 0.012 0.0135" rpy="1.5708 1.73472e-15 3.14159" />
+<parent link="platesblock_4" />
+<child link="platesblock_4_0" />
+<axis xyz="0 0 0"/>
+</joint>
+
+<link name="platesblock_4_1">
+<visual>
+<geometry>
+<mesh filename="package://plate.stl"/>
+</geometry>
+<material name="platesblock_4_1_material">
+<color rgba="0.972549 0.529412 0.00392157 1.0"/>
+</material>
+</visual>
+<collision>
+<origin xyz="0.0375 0 0.0012" rpy="0 -0 0" />
+<geometry>
+<box size="0.073 0.015 0.002" />
+</geometry>
+<material name="platesblock_4_1_material">
+<color rgba="0.972549 0.529412 0.00392157 1.0"/>
+</material>
+</collision>
+<inertial>
+<origin xyz="0.0375 -1.256e-18 0.00115" rpy="0 0 0"/>
+<mass value="0.00321261"/>
+<inertia ixx="1.09131e-07" ixy="0"  ixz="0" iyy="1.41928e-06" iyz="0" izz="1.52558e-06" />
+</inertial>
+</link>
+<joint name="platesblock_4_platesblock_4_1_fixing" type="fixed">
+<origin xyz="0.006 -0.0143 0.0135" rpy="1.5708 1.27676e-15 3.14159" />
+<parent link="platesblock_4" />
+<child link="platesblock_4_1" />
+<axis xyz="0 0 0"/>
+</joint>
+
+<link name="platesblock_4_2">
+<visual>
+<geometry>
+<mesh filename="package://horn.stl"/>
+</geometry>
+<material name="platesblock_4_2_material">
+<color rgba="0.917647 0.917647 0.917647 1.0"/>
+</material>
+</visual>
+<inertial>
+<origin xyz="-2.29324e-19 -1.05216e-18 -0.0134483" rpy="0 0 0"/>
+<mass value="0.000575062"/>
+<inertia ixx="1.30173e-08" ixy="0"  ixz="0" iyy="1.30173e-08" iyz="0" izz="2.51949e-08" />
+</inertial>
+</link>
+<joint name="platesblock_4_platesblock_4_2_fixing" type="fixed">
+<origin xyz="0 0 0.0135" rpy="-2.18552e-32 -2.33116e-31 6.70224e-32" />
+<parent link="platesblock_4" />
+<child link="platesblock_4_2" />
+<axis xyz="0 0 0"/>
+</joint>
+
+<link name="platesblock_4_3">
+<visual>
+<geometry>
+<mesh filename="package://horn.stl"/>
+</geometry>
+<material name="platesblock_4_3_material">
+<color rgba="0.917647 0.917647 0.917647 1.0"/>
+</material>
+</visual>
+<inertial>
+<origin xyz="-2.29324e-19 -1.05216e-18 -0.0134483" rpy="0 0 0"/>
+<mass value="0.000575062"/>
+<inertia ixx="1.30173e-08" ixy="0"  ixz="0" iyy="1.30173e-08" iyz="0" izz="2.51949e-08" />
+</inertial>
+</link>
+<joint name="platesblock_4_platesblock_4_3_fixing" type="fixed">
+<origin xyz="-0.063 -1.34268e-15 0.0135" rpy="3.01958e-15 -8.49786e-16 -1.83339" />
+<parent link="platesblock_4" />
+<child link="platesblock_4_3" />
+<axis xyz="0 0 0"/>
+</joint>
+
+<link name="platesblock_4_4">
+<visual>
+<geometry>
+<mesh filename="package://motor.stl"/>
+</geometry>
+<material name="platesblock_4_4_material">
+<color rgba="0.470588 0.470588 0.470588 1.0"/>
+</material>
+</visual>
+<collision>
+<origin xyz="0 -0.008 0" rpy="0 -0 0" />
+<geometry>
+<box size="0.02 0.03 0.022" />
+</geometry>
+<material name="platesblock_4_4_material">
+<color rgba="0.470588 0.470588 0.470588 1.0"/>
+</material>
+</collision>
+<inertial>
+<origin xyz="2.21444e-09 -0.00683721 0.000497669" rpy="0 0 0"/>
+<mass value="0.0171001"/>
+<inertia ixx="2.29537e-06" ixy="-5.64962e-13"  ixz="-2.154e-13" iyy="1.52616e-06" iyz="-6.36265e-08" izz="2.01963e-06" />
+</inertial>
+</link>
+<joint name="platesblock_4_platesblock_4_4_fixing" type="fixed">
+<origin xyz="-1.38778e-17 -1.73472e-18 0.0135" rpy="2.93284e-15 -3.66174e-17 -1.5708" />
+<parent link="platesblock_4" />
+<child link="platesblock_4_4" />
+<axis xyz="0 0 0"/>
+</joint>
+
+<link name="platesblock_4_5">
+<visual>
+<geometry>
+<mesh filename="package://motor.stl"/>
+</geometry>
+<material name="platesblock_4_5_material">
+<color rgba="0.470588 0.470588 0.470588 1.0"/>
+</material>
+</visual>
+<collision>
+<origin xyz="0 -0.008 0" rpy="0 -0 0" />
+<geometry>
+<box size="0.02 0.03 0.022" />
+</geometry>
+<material name="platesblock_4_5_material">
+<color rgba="0.470588 0.470588 0.470588 1.0"/>
+</material>
+</collision>
+<inertial>
+<origin xyz="2.21444e-09 -0.00683721 0.000497669" rpy="0 0 0"/>
+<mass value="0.0171001"/>
+<inertia ixx="2.29537e-06" ixy="-5.64962e-13"  ixz="-2.154e-13" iyy="1.52616e-06" iyz="-6.36265e-08" izz="2.01963e-06" />
+</inertial>
+</link>
+<joint name="platesblock_4_platesblock_4_5_fixing" type="fixed">
+<origin xyz="-0.063 -1.34441e-15 0.0135" rpy="-3.09012e-15 3.66174e-17 1.5708" />
+<parent link="platesblock_4" />
+<child link="platesblock_4_5" />
+<axis xyz="0 0 0"/>
+</joint>
+
+<link name="leg_4">
+<inertial>
+<origin xyz="0 0 0" rpy="0 0 0" />
+<mass value="1e-9" />
+<inertia ixx="0" ixy="0" ixz="0" iyy="0" iyz="0" izz="0" />
+</inertial>
+</link>
+<link name="leg_4_0">
+<visual>
+<geometry>
+<mesh filename="package://leg.stl"/>
+</geometry>
+<material name="leg_4_0_material">
+<color rgba="0.972549 0.529412 0.00392157 1.0"/>
+</material>
+</visual>
+<collision>
+<origin xyz="0 -0.016 -0.035" rpy="0 -0 0" />
+<geometry>
+<box size="0.02 0.002 0.09" />
+</geometry>
+<material name="leg_4_0_material">
+<color rgba="0.972549 0.529412 0.00392157 1.0"/>
+</material>
+</collision>
+<collision>
+<origin xyz="0 0.016 -0.035" rpy="0 -0 0" />
+<geometry>
+<box size="0.02 0.002 0.09" />
+</geometry>
+<material name="leg_4_0_material">
+<color rgba="0.972549 0.529412 0.00392157 1.0"/>
+</material>
+</collision>
+<collision>
+<origin xyz="0 0 -0.09" rpy="0 -0 0" />
+<geometry>
+<sphere radius="0.015" />
+</geometry>
+<material name="leg_4_0_material">
+<color rgba="0.972549 0.529412 0.00392157 1.0"/>
+</material>
+</collision>
+<inertial>
+<origin xyz="-1.81936e-17 -1.53804e-17 -0.0533786" rpy="0 0 0"/>
+<mass value="0.0154162"/>
+<inertia ixx="2.13816e-05" ixy="0"  ixz="0" iyy="1.88204e-05" iyz="0" izz="3.58407e-06" />
+</inertial>
+</link>
+<joint name="leg_4_leg_4_0_fixing" type="fixed">
+<origin xyz="0 -0.015 0" rpy="-1.17202e-31 -0 0" />
+<parent link="leg_4" />
+<child link="leg_4_0" />
+<axis xyz="0 0 0"/>
+</joint>
+
+<joint name="leg4_c" type="revolute">
+<origin xyz="-0.063 -1.34268e-15 -0.0015" rpy="-1.5708 -6.75802e-18 -1.5708" />
+<parent link="platesblock_4" />
+<child link="leg_4" />
+<axis xyz="0 -1 0"/>
+<limit effort="1" velocity="20" />
+<joint_properties friction="0.0"/>
+</joint>
+
+<joint name="leg4_b" type="revolute">
+<origin xyz="-0.015 0.01615 0.0406" rpy="-3.69196e-16 1.5708 0" />
+<parent link="doubleu_4" />
+<child link="platesblock_4" />
+<axis xyz="0 0 1"/>
+<limit effort="1" velocity="20" />
+<joint_properties friction="0.0"/>
+</joint>
+
+<joint name="leg4_a" type="revolute">
+<origin xyz="-9.72372e-18 0.0485 -0.0007" rpy="1.5708 5.00173e-19 -3.14159" />
+<parent link="body_1" />
+<child link="doubleu_4" />
+<axis xyz="0 -1 0"/>
+<limit effort="1" velocity="20" />
+<joint_properties friction="0.0"/>
+</joint>
+
+</robot>
