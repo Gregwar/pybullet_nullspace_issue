@@ -5,8 +5,8 @@ import sys
 import pybullet as p
 from time import sleep
 
-mode = 'ik'
-# mode = 'nullspace'
+# mode = 'ik'
+mode = 'nullspace'
 
 directory = 'quadruped/'
 
@@ -18,11 +18,10 @@ p.setGravity(0, 0, -10)
 planeId = p.loadURDF('bullet/plane.urdf')
 
 # Chargement du robot
-cubeStartPos = [0, 0, 0.5]
-cubeStartOrientation = p.getQuaternionFromEuler([0, 0, 0])
+startPos = [0, 0, 0.5]
+startOrientation = p.getQuaternionFromEuler([0, 0, 0])
 robot = p.loadURDF(directory+"/robot.urdf",
-                       cubeStartPos, cubeStartOrientation)
-cubePos, cubeOrn = p.getBasePositionAndOrientation(robot)
+                       startPos, startOrientation)
 nJoints = p.getNumJoints(robot)
 
 # Map des joints
@@ -62,7 +61,7 @@ while True:
     t += dt
     
     # Traget position
-    pos = [0.18, 0.02, 0.48+0.05*math.sin(t*3)]
+    pos = [0.18, 0.0, 0.48+0.05*math.sin(t*3)]
 
     if mode == 'ik':
         jointPoses = p.calculateInverseKinematics(
